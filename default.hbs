@@ -14,34 +14,34 @@
 
 </head>
 <body class="{{body_class}}">
-<header>
-    <nav class="flex">
-      <h2 class="text-sm">Portfolio</h2>
-      <h2>Reviews</h2>
-      <img class="w-60" src="{{@site.logo}}" alt="Camories logo"/>
-      <h2>About Us</h2>
-      <h2>Contact</h2>
-    </nav>
-</header>
+  <header class="fixed w-full z-10">
+      <nav class="mt-12 flex justify-evenly items-center text-white">
+        <h2 class="text-xl">Portfolio</h2>
+        <h2 class="text-xl">Reviews</h2>
+        <img class="w-60" src="{{ asset 'images/logo white.png' }}" alt="Camories logo"/>
+        <h2 class="text-xl">About Us</h2>
+        <h2 class="text-xl">Contact</h2>
+      </nav>
+  </header>
 
-<main class="gh-main">
-    {{{body}}}
-</main>
+  <main>
+      {{{body}}}
+  </main>
 
-<footer class="gh-foot">
-    <div class="gh-container">
-        <div class="gh-foot-menu">
-            {{navigation type="secondary"}}
-        </div>
-        <div class="gh-foot-meta">
-            Published with <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
-        </div>
-    </div>
-</footer>
+  <footer class="gh-foot">
+      <div class="gh-container">
+          <div class="gh-foot-menu">
+              {{navigation type="secondary"}}
+          </div>
+          <div class="gh-foot-meta">
+              Published with <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+          </div>
+      </div>
+  </footer>
 
-{{!-- <foot> --}}
-{{ghost_foot}}
-{{!-- Outputs important scripts - should always be included before closing body tag --}}
+  {{!-- <foot> --}}
+  {{ghost_foot}}
+  {{!-- Outputs important scripts - should always be included before closing body tag --}}
 
 </body>
 </html>
