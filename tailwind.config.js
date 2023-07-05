@@ -1,9 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: ["./*.hbs", "./**/*.hbs"],
   theme: {
     extend: {},
   },
-  plugins: [],
-}
-
+  plugins: [require("@tailwindcss/typography")],
+};

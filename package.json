@@ -11,8 +11,8 @@
     "desktop": "assets/screenshot-desktop.jpg"
   },
   "scripts": {
-    "dev": "rollup -c --environment BUILD:development -w",
-    "build": "rollup -c --environment BUILD:production",
+    "dev": "concurrently \"rollup -c --environment BUILD:development -w\" \"npx tailwindcss -i ./assets/css/index.css -o ./assets/built/index.css --watch\" ",
+    "build": "rollup -c --environment BUILD:production && npx tailwindcss -i ./assets/css/index.css -o ./assets/built/index.css --minify",
     "zip": "npm run build && bestzip $npm_package_name.zip assets/* partials/* members/* *.hbs package.json",
     "test": "npx gscan .",
     "pretest": "npm run build"

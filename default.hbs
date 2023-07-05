@@ -14,48 +14,18 @@
 
 </head>
 <body class="{{body_class}}">
-<div class="gh-viewport">
-
-<header id="gh-head" class="gh-head">
-    <nav class="gh-head-inner gh-container">
-
-        <div class="gh-head-brand">
-            <a class="gh-head-logo" href="{{@site.url}}">
-                {{#if @site.logo}}
-                    <img src="{{@site.logo}}" alt="{{@site.title}}" />
-                {{else}}
-                    {{@site.title}}
-                {{/if}}
-            </a>
-            <a class="gh-burger" role="button" aria-label="menu">
-                <div class="gh-burger-box">
-                    <div class="gh-burger-inner"></div>
-                </div>
-            </a>
-        </div>
-        <div class="gh-head-menu">
-            {{navigation}}
-        </div>
-        <div class="gh-head-actions">
-            <div class="gh-head-actions-list">
-                {{search}}
-                {{#if @site.members_enabled}}
-                    {{^if @member}}
-                    <a class="gh-button" href="{{@site.signup_url}}">Subscribe</a>
-                    {{else}}
-                    <a class="gh-button" href="#/portal/account">Account</a>
-                    {{/if}}
-                {{/if}}
-            </div>
-        </div>
+<header>
+    <nav class="flex">
+      <h2 class="text-sm">Portfolio</h2>
+      <h2>Reviews</h2>
+      <img class="w-60" src="{{@site.logo}}" alt="Camories logo"/>
+      <h2>About Us</h2>
+      <h2>Contact</h2>
     </nav>
 </header>
 
 <main class="gh-main">
-
     {{{body}}}
-    {{!-- All content gets inserted here, index.hbs, post.hbs, etc --}}
-
 </main>
 
 <footer class="gh-foot">
@@ -68,8 +38,6 @@
         </div>
     </div>
 </footer>
-
-</div>
 
 {{!-- <foot> --}}
 {{ghost_foot}}
