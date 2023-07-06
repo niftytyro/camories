@@ -14,6 +14,8 @@ export default {
         biege: "#A3826C",
         gray: "#666666",
         sacramento: "#001C0E",
+        white: "#FCFCFC",
+        black: "#090909",
       },
     },
     plugins: [require("@tailwindcss/typography")],
