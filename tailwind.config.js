@@ -12,6 +12,8 @@ export default {
       colors: {
         ivory: "#F9F6F3",
         biege: "#A3826C",
+        gray: "#666666",
+        sacramento: "#001C0E",
       },
     },
     plugins: [require("@tailwindcss/typography")],

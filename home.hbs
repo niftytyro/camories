@@ -18,9 +18,14 @@
   </div>
 </section>
 
-<section class="pt-32">
-  <h1 class="font-serif text-4xl font-medium text-center mb-16">Check Out Our Work</h1>
+<section class="pt-32 w-full">
+  <h1 class="font-serif text-5xl font-medium text-center mb-16 text-gray">Check Out Our Work</h1>
   {{> "video-thumbnail" thumbnail-img="5.png" title="Ananya x Ranveer" }}
 
-  <h2 class="font-semibold text-4xl uppercase ml-28 mt-28 mb-16">Stories</h2>
+  <h2 class="font-serif text-center text-5xl mt-20 mb-16 text-gray">Stories</h2>
+  {{> featured-carousel }}
+
+  <div class="flex justify-content items-center mt-16">
+    {{> "cta-dark" heading="More Stories" }}
+  </div>
 </section>

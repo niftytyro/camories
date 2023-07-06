@@ -1,0 +1,17 @@
+{{#get "posts" filter="featured:true" limit="all"}}
+    {{#if posts}}
+        <div id="carousel-container" class="flex pl-20 overflow-x-hidden">
+          {{#foreach posts}}
+            {{> carousel-card img=feature_image title=title url=url }}
+          {{/foreach}}
+        </div>
+
+        <div class="flex justify-center items-center mt-12">
+        <button id="previous">{{> "icons/long-arrow-left" }}</button>
+        <span id="current" class="ml-8 mb-6 font-serif text-xl">1</span>
+        <span class="mx-2 text-5xl">/</span>
+        <span id="total-cards" class="mr-8 mt-6 font-serif text-xl">{{ posts.length }}</span>
+        <button id="next">{{> "icons/long-arrow-right" }}</button>
+        </div>
+    {{/if}}
+{{/get}}
