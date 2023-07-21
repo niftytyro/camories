@@ -4,9 +4,10 @@
 // import menuOpen from "./menuOpen";
 // import infiniteScroll from "./infiniteScroll";
 import initInfiniteCarousel from "./infiniteCarousel";
+import homeHeader from "./home-header";
 
 // Call the menu and infinite scroll functions
 // menuOpen();
 // infiniteScroll();
 initInfiniteCarousel();
-
+homeHeader();
